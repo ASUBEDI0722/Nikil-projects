@@ -1,0 +1,23 @@
+package com.ektha.design.lazy;
+
+public class LazyInstantiation {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class Abc {
+
+	static Abc obj = new Abc();
+
+	private Abc() {
+
+	}
+
+	public static Abc getInstance() {
+
+		return obj;
+	}
+}

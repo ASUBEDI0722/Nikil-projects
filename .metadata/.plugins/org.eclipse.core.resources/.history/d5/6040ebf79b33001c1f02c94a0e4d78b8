@@ -1,0 +1,26 @@
+package com.ektha.app;
+
+public class DemoSingleton {
+
+	public static void main(String[] args) {
+
+		Demo demo = Demo.getInstance();
+		Demo demo = Demo.getInstance();
+	}
+
+}
+
+class Demo {
+
+	public static Demo demo = new Demo();
+
+	private Demo() {
+
+	}
+
+	public static Demo getInstance() {
+		System.out.println("Anamika");
+		return demo;
+	}
+
+}

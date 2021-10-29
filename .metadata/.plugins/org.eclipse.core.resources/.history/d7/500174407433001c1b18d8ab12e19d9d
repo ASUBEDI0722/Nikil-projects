@@ -1,0 +1,8 @@
+package com.ektha.design.lazy;
+
+public class LazyInstantiation {
+
+	public static void main(String[] args) {
+
+	}
+}

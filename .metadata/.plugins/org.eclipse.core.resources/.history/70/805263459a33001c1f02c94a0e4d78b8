@@ -1,0 +1,10 @@
+package com.ektha.app;
+
+public class DemoSingleton {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

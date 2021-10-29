@@ -1,0 +1,18 @@
+package com.ektha.bcj.overloading;
+
+public class Resturant {
+
+	public static void main(String[] args) {
+		double billAmount = 0;
+		double tax = 0;
+		payBill(billAmount, tax);
+	}
+
+	public static double payBill(double subTotal, double tax) {
+
+		subTotal = 53.25;
+		tax = 5.33;
+		double totalBill = subTotal + tax;
+		return totalBill;
+	}
+}

@@ -1,0 +1,14 @@
+package com.ektha.bcj.overriding;
+
+public class EmployeeDemo {
+
+	public static void main(String[] args) {
+
+		Manager manager = new Manager();
+		System.out.println("Salary pf manager with bonus " + manager.printSalary());
+
+		Developer developer = new Developer();
+		System.out.println("Salary of developer with bonus " + developer.printSalary());
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.ektha.bcj.overriding;
+
+public class Developer extends Employee {
+
+	public Developer() {
+	}
+
+	public double printSalary() {
+
+		double salary = 3000;
+		double bonusPercent = 0.1;
+
+		double totalSalary = salary + salary * bonusPercent;
+
+		return totalSalary;
+	}
+
+}

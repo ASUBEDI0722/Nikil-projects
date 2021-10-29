@@ -1,0 +1,36 @@
+package com.ektha.design.lazy;
+
+public class SingletonDemo {
+
+	public static void main(String[] args) {
+
+		Abc obj1 = Abc.getInstance();
+		obj1.addNumber(0);
+		
+		
+	}
+
+}
+
+class Abc {
+
+	static Abc obj = new Abc();
+
+	int number = 0;
+	private Abc() {
+
+	}
+
+	public static Abc getInstance() {
+		return obj;
+	}
+	
+	
+	public void addNumber() {
+		++number;
+	}
+	
+	public int returnNumber() {
+		return number;
+	}
+}

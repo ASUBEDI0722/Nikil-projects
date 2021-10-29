@@ -1,0 +1,14 @@
+package com.ektha.bcj.overloading;
+
+public class EmployeeDemo {
+
+	public static void main(String[] args) {
+
+		Manager manager = new Manager();
+		
+		manager.getSalary();
+		Developer developer = new Developer();
+		System.out.println(developer.getSalary(3000, 0.2));
+	}
+
+}

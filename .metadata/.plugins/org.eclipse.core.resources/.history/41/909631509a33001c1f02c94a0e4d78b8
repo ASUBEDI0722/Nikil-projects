@@ -1,0 +1,24 @@
+package com.ektha.app;
+
+public class DemoSingleton {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Demo {
+
+	public static Demo demo = new Demo();
+
+	private Demo() {
+
+	}
+
+	public static Demo getInstance() {
+		return demo;
+	}
+
+}

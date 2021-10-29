@@ -1,0 +1,18 @@
+package com.ektha.bcj.overloading;
+
+public class Manager extends Employee {
+
+	double bonusPercent = 0.2;
+
+	public Manager(int employeeId, String employeeName, double salary) {
+		super(employeeId, employeeName, salary);
+	}
+
+	public double getSalary(double salary, double bonusPercent) {
+
+		salary = 4000;
+
+		return salary + salary * bonusPercent;
+	}
+
+}

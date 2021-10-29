@@ -1,0 +1,41 @@
+package com.ektha.bcj.inheritance;
+
+import java.util.Scanner;
+
+public class ShapeDemo {
+
+	public static void main(String[] args) {
+
+//		ShapeService shapeService = new ShapeService();
+//		shapeService.drawTriangle();
+//		shapeService.drawRectangle();
+
+		String shape;
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("What shape would you like to print? Rectangle/Triangle");
+
+		shape = scanner.next();
+		scanner.close();
+	}
+
+	public static void printShape(String shapeName) {
+
+		ShapeService shapeService = new ShapeService();
+
+//		Shape shape = shapeService.
+
+		if (shapeName.equalsIgnoreCase("Triangle")) {
+			Triangle triangle = shapeService.drawTriangle();
+
+		} else if (shapeName.equalsIgnoreCase("Rectangle")) {
+
+			Rectangle rectangle = shapeService.drawRectangle();
+
+		} else {
+			System.out.println("Invalid shape choice.");
+		}
+	}
+
+}

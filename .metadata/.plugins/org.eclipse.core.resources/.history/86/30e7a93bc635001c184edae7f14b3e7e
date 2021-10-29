@@ -1,0 +1,49 @@
+package com.ektha.bcj.overriding;
+
+public class Employee {
+
+	int employeeId;
+	String employeeName;
+	double Salary;
+
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Employee(int employeeId, String employeeName, double salary) {
+		super();
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
+		Salary = salary;
+	}
+
+	public int getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public String getEmployeeName() {
+		return employeeName;
+	}
+
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
+	}
+
+	public double getSalary() {
+		return Salary;
+	}
+
+	public void setSalary(double salary) {
+		Salary = salary;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [employeeId=" + employeeId + ", employeeName=" + employeeName + ", Salary=" + Salary + "]";
+	}
+
+}
